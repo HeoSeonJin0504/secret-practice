@@ -6,7 +6,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-  steps:
-  - name: print secret key
-    run: |
-      echo "key : ${{ secrets.TEST_KEY }}"
+    steps:
+    - name: print secret key
+      run: |
+        echo "key : ${{ secrets.TEST_KEY }}"
