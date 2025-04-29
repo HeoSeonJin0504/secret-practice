@@ -1,0 +1,12 @@
+name: secret-practice
+
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+  steps:
+  - name: print secret key
+    run: |
+      echo "key : ${{ secrets.TEST_KEY }}"
